@@ -4,11 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:background="@android:color/secondary_text_dark"
-    tools:context=".MainActivity">
-
+    android:padding="10dp"
+    tools:context=".SignUpActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -33,6 +30,16 @@
                 android:layout_width="400dp"
                 android:layout_height="100dp"
                 app:srcCompat="@drawable/home" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:hint="full name"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
@@ -63,6 +70,14 @@
                 android:paddingBottom="10dp" />
 
             <Button
+                android:id="@+id/creatbtn"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:text="creat an account" />
+
+            <Button
                 android:id="@+id/loginbtn"
                 android:layout_width="389dp"
                 android:layout_height="wrap_content"
@@ -70,15 +85,7 @@
                 android:background="@drawable/buttonstyle"
                 android:insetLeft="6dp"
                 android:insetRight="6dp"
-                android:text="login" />
-
-            <Button
-                android:id="@+id/creatbtn"
-                android:layout_width="390dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/buttonstyle2"
-                android:text="creat an account" />
+                android:text="all ready have an account" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
